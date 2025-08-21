@@ -151,5 +151,11 @@ namespace ConsoleApp4
                         Console.WriteLine(" try again.");
                         break;
                 }
+            }
+        }
+    }
+}
+
+
 
 
