@@ -8,7 +8,7 @@ namespace ConsoleApp4
    public class Customer
     {
 
-        //public const string UniqueID = "1423";   
+        public const string UniqueID = "1423";   
 
         private static int counter = 1;
         public int ID
@@ -64,5 +64,6 @@ namespace ConsoleApp4
     }
 
     }
+
 
 
