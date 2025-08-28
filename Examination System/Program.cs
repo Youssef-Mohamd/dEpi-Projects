@@ -36,7 +36,7 @@ namespace examination_system
 
                 string choice = Console.ReadLine();
 
-                //if (choice == "4") break;
+                if (choice == "4") break;
 
                 Console.Write("Enter Question Text: ");
                 string qText = Console.ReadLine();
@@ -83,7 +83,7 @@ namespace examination_system
                     exam.AddQuestion(question);
                 }
 
-                if (choice == "4") break;
+               // if (choice == "4") break;
 
                 
 
@@ -121,4 +121,5 @@ namespace examination_system
         }
     }
 }
+
 
