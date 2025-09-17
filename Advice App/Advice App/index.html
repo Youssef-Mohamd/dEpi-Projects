@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advice App</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="app.js"></script>
+</head>
+
+<body>
+    <div class="advice-card">
+        <div class="card-container">
+            <p>Advice #<span id="advice-id"></span></p>
+      <h2>" <span id="advice-text"></span> "</h2>
+
+         <picture>
+        <source media="(max-width:500px)" srcset="imges/pattern-divider-mobile.svg">
+        <img src="imges/pattern-divider-desktop.svg" alt=""> 
+      </picture>
+      <button id="generate-btn">
+        <img src="imges/icon-dice.svg" alt=""> 
+      </button>
+    </div>
+  </div>
+</body>
+</html>
