@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;600&display=swap');
+
+/* reset */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+body {
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-size: 13px; 
+    font-weight: 500;
+    color: #ecf2f8;
+
+    display: grid;
+    place-items: center;
+    min-height: 100dvh;
+}
+
+/* helper classes */
+.flex {
+    display: flex;
+    align-items: center;
+    gap: 13px; 
+}
+
+.testimonial-bg-grey {
+    background: #48556a !important;
+}
+
+.testimonial-bg-dark {
+    background: #19212e !important;
+}
+
+.testimonial-bg-light {
+    background: #ffffff !important;
+}
+
+.testimonial-bg-light p {
+    color: #48556a;
+}
+
+/* text styles */
+.username, .user-role {
+    color: #ecf2f8;
+}
+
+.username {
+    font-weight: 600;
+}
+
+.user-role {
+    opacity: 50%;
+}
+
+.testimonial-content p:not([class]) {
+    opacity: 70%;
+}
+
+.testimonial-heading {
+    font-size: 20px; 
+    color: #ffffff;
+    margin: 16px 0 13px; 
+}
+
+/* components */
+.testimonial {
+    padding: 20px; 
+    border-radius: 8px; 
+    background: #7541c8;
+}
+
+.user-info img {
+    width: 32px;
+    border-radius: 50%;
+    border: 1px solid #ecf2f8;
+}
+
+/* layout styles */
+.testimonial-container {
+    display: grid;
+    gap: 20px; 
+    width: min(90%, 1120px); 
+    margin: 64px 0;
+
+    grid-auto-columns: 1fr;
+    grid-template-areas: 
+    'one'
+    'two'
+    'three'
+    'four'
+    'five'
+    ;
+}
+
+.testimonial:nth-child(1) {
+    grid-area: one;
+}
+
+.testimonial:nth-child(2) {
+    grid-area: two;
+}
+
+.testimonial:nth-child(3) {
+    grid-area: three;
+}
+
+.testimonial:nth-child(4) {
+    grid-area: four;
+}
+
+.testimonial:nth-child(5) {
+    grid-area: five;
+}
+
+/* media query */
+@media screen and (min-width: 560px) { 
+    .testimonial-container {
+        grid-template-areas: 
+        'one one'
+        'two five'
+        'three five'
+        'four four'
+        ;
+    }
+}
+
+@media screen and (min-width: 880px) {
+    .testimonial-container {
+        grid-template-areas: 
+        'one one two five'
+        'three four four five'
+        ;
+    }
+}
